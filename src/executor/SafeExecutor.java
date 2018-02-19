@@ -2,7 +2,7 @@ package executor;
 
 import java.util.ArrayList;
 
-public class SafeExcutor {
+public class SafeExecutor {
 
     public static SafeExecutorBuilder build() {
         return new SafeExecutorBuilder();
