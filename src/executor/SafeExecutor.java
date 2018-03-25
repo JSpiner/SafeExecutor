@@ -22,23 +22,25 @@ public class SafeExecutor {
             return this;
         }
 
-        public SafeExecutorBuilder onError(ErrorListener errorListener){
+        public SafeExecutorBuilder onError(ErrorListener errorListener) {
             this.errorListener = errorListener;
             return this;
         }
 
-        public void run(){
-            for(Executable executable : executableList){
+        public void run() {
+            for (Executable executable : executableList) {
                 try {
                     executable.execute();
-                }
-                catch (Exception error){
+                } catch (Exception error) {
                     executeError(error);
                 }
             }
         }
 
-        private void executeError(Throwable error){
+        private void executeError(Throwable error) {
+            if (errorListener == null) {
+                throw new NullPointerException("error listener is not implemented");
+            }
             errorListener.onError(error);
         }
 
