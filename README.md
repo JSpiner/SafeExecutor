@@ -59,4 +59,5 @@ private void bindData(CarModel carModel) {
         .run();
 }
 ```
+Simple and safe and... looks cool!!
 
