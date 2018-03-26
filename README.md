@@ -22,7 +22,7 @@ private void bindData(CarModel carModel) {
 }
 ```
 
-There is many problems.
+There are many problems.
 1. `carModel` or `carModel.detail` can be null
 2. `carNameTextView` can be null
 3. `setText` is may not be able to run on other thread
@@ -43,7 +43,7 @@ private void bindData(CarModel carModel) {
 }
 ```
 
-But there is still proglems.
+But there are still proglems.
 1. If first `setText` fails, the rest is not executed.
 2. You can use `try-catch` on every line. But it is uncomfortable.
 
