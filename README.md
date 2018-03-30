@@ -43,7 +43,7 @@ private void bindData(CarModel carModel) {
 }
 ```
 
-But there are still proglems.
+But there are still problems.
 1. If first `setText` fails, the rest is not executed.
 2. You can use `try-catch` on every line. But it is uncomfortable.
 
