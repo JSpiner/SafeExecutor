@@ -38,6 +38,9 @@ public class SafeExecutor {
         }
 
         private void executeError(Throwable error) {
+            if (errorListener == null) {
+                throw new NullPointerException("error listener is not implemented");
+            }
             errorListener.onError(error);
         }
 
