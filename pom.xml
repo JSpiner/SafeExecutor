@@ -20,6 +20,14 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement> 
+        <repository> 
+            <id>enum-mapper</id>    
+            <url>https://api.bintray.com/maven/jspiner/executor/safeexecutor/;publish=1</url> 
+        </repository> 
+    </distributionManagement>
+
+
     <parent>
         <groupId>org.eluder</groupId>
         <artifactId>eluder-parent</artifactId>
