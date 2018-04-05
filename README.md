@@ -1,5 +1,6 @@
-# executor.SafeExecutor
-executor.SafeExecutor is event based error handler.
+# SafeExecutor
+[![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor)
+SafeExecutor is event based error handler.
 
 # STILL DEVELOPING !!!
 ### now support
@@ -12,7 +13,7 @@ executor.SafeExecutor is event based error handler.
 
 # Useage
 
-Before you know executor.SafeExecutor,
+Before you know SafeExecutor,
 
 ```java
 private void bindData(CarModel carModel) {
@@ -47,10 +48,10 @@ But there are still problems.
 1. If first `setText` fails, the rest is not executed.
 2. You can use `try-catch` on every line. But it is uncomfortable.
 
-After you know executor.SafeExecutor,
+After you know SafeExecutor,
 ```java
 private void bindData(CarModel carModel) {
-    executor.SafeExecutor.build()
+    SafeExecutor.build()
         .add(() -> carNameTextView.setText(carModel.detail.carName))
         .add(() -> carPriceTextView.setText(carModel.detail.price.toString()))
         .add(() -> carNumberTextView.setText(carModel.detail.number.toString()))
