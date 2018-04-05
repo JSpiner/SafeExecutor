@@ -1,5 +1,6 @@
 # SafeExecutor
-[![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor) [![Coverage Status](https://coveralls.io/repos/github/JSpiner/SafeExecutor/badge.svg?branch=master)](https://coveralls.io/github/JSpiner/SafeExecutor?branch=master)
+[![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor) [![Coverage Status](https://coveralls.io/repos/github/JSpiner/SafeExecutor/badge.svg?branch=master)](https://coveralls.io/github/JSpiner/SafeExecutor?branch=master) [ ![Download](https://api.bintray.com/packages/jspiner/executor/safeexecutor/images/download.svg) ](https://bintray.com/jspiner/executor/safeexecutor/_latestVersion)
+
 
 SafeExecutor is event based error handler.
 
@@ -63,3 +64,20 @@ private void bindData(CarModel carModel) {
 ```
 Simple and safe and... looks cool!!
 
+# Download
+[ ![Download](https://api.bintray.com/packages/jspiner/executor/safeexecutor/images/download.svg) ](https://bintray.com/jspiner/executor/safeexecutor/_latestVersion)
+
+Maven
+```xml
+<dependency>
+  <groupId>net.jspiner</groupId>
+  <artifactId>safeexecutor</artifactId>
+  <version>{VERSION_CODE_HERE}</version>
+  <type>pom</type>
+</dependency>
+```
+
+Gradle
+```gradle
+compile 'net.jspiner:safeexecutor:{VERSION_CODE_HERE}'
+```
