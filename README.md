@@ -1,5 +1,6 @@
 # SafeExecutor
-[![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor)
+[![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor) [![Coverage Status](https://coveralls.io/repos/github/JSpiner/SafeExecutor/badge.svg?branch=master)](https://coveralls.io/github/JSpiner/SafeExecutor?branch=master)
+
 SafeExecutor is event based error handler.
 
 # STILL DEVELOPING !!!
