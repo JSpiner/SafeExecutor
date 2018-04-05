@@ -7,6 +7,11 @@
     <groupId>net.jspiner</groupId>
     <artifactId>safeexecutor</artifactId>
     <version>0.1</version>
+
+    <name>SafeExecutor</name> 
+    <description>event based error handler </description> 
+    <url>https://github.com/JSpiner/SafeExecutor</url>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
