@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.jspiner</groupId>
-    <artifactId>executor</artifactId>
+    <artifactId>safeexecutor</artifactId>
     <version>0.1</version>
     <dependencies>
         <dependency>
