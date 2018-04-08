@@ -12,4 +12,9 @@ public class SafeExecutorBuildTest {
                 builder instanceof SafeExecutor.SafeExecutorBuilder
         );
     }
+
+    @Test(expected = RuntimeException.class)
+    public void constructorErrorTest(){
+        new SafeExecutor();
+    }
 }

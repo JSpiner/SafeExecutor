@@ -2,6 +2,10 @@ import java.util.ArrayList;
 
 public class SafeExecutor {
 
+    public SafeExecutor(){
+        throw new RuntimeException("create SafeExecutor() is not allowed. use SafeExecutor.build();");
+    }
+
     public static SafeExecutorBuilder build() {
         return new SafeExecutorBuilder();
     }
