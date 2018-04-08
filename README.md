@@ -2,18 +2,18 @@
 [![Build Status](https://travis-ci.org/JSpiner/SafeExecutor.svg?branch=master)](https://travis-ci.org/JSpiner/SafeExecutor) [![Coverage Status](https://coveralls.io/repos/github/JSpiner/SafeExecutor/badge.svg?branch=master)](https://coveralls.io/github/JSpiner/SafeExecutor?branch=master) [ ![Download](https://api.bintray.com/packages/jspiner/executor/safeexecutor/images/download.svg) ](https://bintray.com/jspiner/executor/safeexecutor/_latestVersion)
 
 
-SafeExecutor is event based error handler.
+SafeExecutor is event-based error handler.
 
 # STILL DEVELOPING !!!
 ### now support
 - error listener
 - add event
 
-### will support
+### support soon
 - retry policy
 - thread scheduler
 
-# Useage
+# Usage
 
 Before you know SafeExecutor,
 
@@ -46,9 +46,9 @@ private void bindData(CarModel carModel) {
 }
 ```
 
-But there are still problems.
-1. If first `setText` fails, the rest is not executed.
-2. You can use `try-catch` on every line. But it is uncomfortable.
+But there are still some problems.
+1. If first `setText` fails, rests are not executed.
+2. You can use `try-catch` on every line, but it's uncomfortable.
 
 After you know SafeExecutor,
 ```java
