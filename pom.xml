@@ -6,7 +6,7 @@
 
     <groupId>net.jspiner</groupId>
     <artifactId>safeexecutor</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
 
     <name>SafeExecutor</name> 
     <description>event based error handler </description> 
