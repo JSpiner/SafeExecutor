@@ -1,3 +1,5 @@
+package net.jspiner.executor;
+
 import java.util.ArrayList;
 
 public class SafeExecutor {
