@@ -1,3 +1,9 @@
+Thanks for creating issue.
+
+- library version : (x.x.x)
+- platform : (sdk 26)
+- etc : (run on background...)
+
 ## Expected Behavior
 
 
@@ -5,13 +11,6 @@
 
 
 ## Steps to Reproduce the Problem
-
-  1.
-  1.
-  1.
-
-## Specifications
-
-  - Version:
-  - Platform:
-  - Subsystem:
+1.
+1.
+1.
