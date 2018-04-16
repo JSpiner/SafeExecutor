@@ -1,16 +1,5 @@
 Thanks for creating issue.
+Please don't file issues directly, use one of our available templates:
 
-- library version : (x.x.x)
-- platform : (sdk 26)
-- etc : (run on background...)
-
-## Expected Behavior
-
-
-## Actual Behavior
-
-
-## Steps to Reproduce the Problem
-1.
-1.
-1.
+[find a bug?](https://github.com/JSpiner/SafeExecutor/issues/new?template=bug.md)
+[hava a question?](https://github.com/JSpiner/SafeExecutor/issues/new?template=question.md)
