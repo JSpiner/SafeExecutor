@@ -16,6 +16,7 @@ public class SafeExecutor {
 
         private ArrayList<Executable> executableList;
         private ErrorListener errorListener;
+        private boolean ignore;
 
         private SafeExecutorBuilder() {
             executableList = new ArrayList<>();
@@ -27,7 +28,13 @@ public class SafeExecutor {
         }
 
         public SafeExecutorBuilder onError(ErrorListener errorListener) {
+            this.ignore = false;
             this.errorListener = errorListener;
+            return this;
+        }
+
+        public SafeExecutorBuilder ignore() {
+            this.ignore = true;
             return this;
         }
 
@@ -36,7 +43,9 @@ public class SafeExecutor {
                 try {
                     executable.execute();
                 } catch (Exception error) {
-                    executeError(error);
+                    if (!ignore) {
+                        executeError(error);
+                    }
                 }
             }
         }
