@@ -2,7 +2,7 @@ package net.jspiner.executor;
 
 import java.util.ArrayList;
 
-public class SafeExecutor {
+public final class SafeExecutor {
 
     public SafeExecutor(){
         throw new RuntimeException("create SafeExecutor() is not allowed. use SafeExecutor.build();");
@@ -12,10 +12,11 @@ public class SafeExecutor {
         return new SafeExecutorBuilder();
     }
 
-    public static class SafeExecutorBuilder {
+    public static final class SafeExecutorBuilder {
 
         private ArrayList<Executable> executableList;
         private ErrorListener errorListener;
+        private boolean ignore;
 
         private SafeExecutorBuilder() {
             executableList = new ArrayList<>();
@@ -27,7 +28,13 @@ public class SafeExecutor {
         }
 
         public SafeExecutorBuilder onError(ErrorListener errorListener) {
+            this.ignore = false;
             this.errorListener = errorListener;
+            return this;
+        }
+
+        public SafeExecutorBuilder ignore() {
+            this.ignore = true;
             return this;
         }
 
@@ -36,7 +43,9 @@ public class SafeExecutor {
                 try {
                     executable.execute();
                 } catch (Exception error) {
-                    executeError(error);
+                    if (!ignore) {
+                        executeError(error);
+                    }
                 }
             }
         }

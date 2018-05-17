@@ -4,6 +4,10 @@
 
 SafeExecutor is event-based error handler.
 
+[find a bug?](https://github.com/JSpiner/SafeExecutor/issues/new?template=bug.md)
+[hava a question?](https://github.com/JSpiner/SafeExecutor/issues/new?template=question.md)
+
+
 # STILL DEVELOPING !!!
 ### now support
 - error listener
