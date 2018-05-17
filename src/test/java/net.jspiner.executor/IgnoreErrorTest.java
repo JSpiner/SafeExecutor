@@ -8,7 +8,7 @@ public class IgnoreErrorTest {
     public void notIgnoreTest() {
         SafeExecutor.build()
                 .add(() -> {
-                            throw new RuntimeException("Error");
+                            throw new RuntimeException("test error");
                         }
                 ).run();
     }
@@ -17,11 +17,41 @@ public class IgnoreErrorTest {
     public void ignoreExceptionTest() {
         SafeExecutor.build()
                 .add(() -> {
-                            throw new RuntimeException("Error");
+                            throw new RuntimeException("test error");
                         }
                 ).ignore()
                 .run();
+    }
 
+    @Test
+    public void ignoreNoExceptionTest() {
+        SafeExecutor.build()
+                .add(() -> doNothing())
+                .ignore()
+                .run();
+    }
+
+    @Test
+    public void ignoreMultipleExceptionTest() {
+        SafeExecutor.build()
+                .add(() -> {
+                    throw new RuntimeException("test error");
+                })
+                .add(() -> {
+                    throw new RuntimeException("test error");
+                })
+                .add(() -> {
+                    throw new RuntimeException("test error");
+                })
+                .add(() -> {
+                    throw new RuntimeException("test error");
+                })
+                .ignore()
+                .run();
+    }
+
+    private void doNothing() {
+        // do nothing for test
     }
 
 }
