@@ -1,5 +1,6 @@
 package net.jspiner.executor;
 
+import executor.SafeExecutor;
 import org.junit.Assert;
 import org.junit.Test;
 

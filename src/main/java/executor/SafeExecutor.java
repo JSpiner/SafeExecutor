@@ -1,4 +1,4 @@
-package net.jspiner.executor;
+package executor;
 
 import java.util.ArrayList;
 

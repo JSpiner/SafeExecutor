@@ -1,5 +1,6 @@
 package net.jspiner.executor;
 
+import executor.SafeExecutor;
 import org.junit.Test;
 
 public class IgnoreErrorTest {

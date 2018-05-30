@@ -1,4 +1,4 @@
-package net.jspiner.executor;
+package executor;
 
 public interface ErrorListener {
 
