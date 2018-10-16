@@ -14,7 +14,7 @@ public final class SafeExecutor {
 
     public static final class SafeExecutorBuilder {
 
-        private ArrayList<Executable> executableList;
+        private ArrayList<Runnable> executableList;
         private ErrorListener errorListener;
         private boolean ignore;
 
@@ -22,7 +22,7 @@ public final class SafeExecutor {
             executableList = new ArrayList<>();
         }
 
-        public SafeExecutorBuilder add(Executable executable) {
+        public SafeExecutorBuilder add(Runnable executable) {
             executableList.add(executable);
             return this;
         }
@@ -39,9 +39,9 @@ public final class SafeExecutor {
         }
 
         public void run() {
-            for (Executable executable : executableList) {
+            for (Runnable executable : executableList) {
                 try {
-                    executable.execute();
+                    executable.run();
                 } catch (Exception error) {
                     if (!ignore) {
                         executeError(error);
